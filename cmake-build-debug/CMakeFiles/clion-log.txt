@@ -1,0 +1,4 @@
+/snap/clion/107/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -Werror -Wall -Wextra -Wno-format -Wold-style-cast -std=c++17 -fno-exceptions -fno-rtti -G "CodeBlocks - Unix Makefiles" "/home/stefan/OneDrive/Embedded Systems/Übung3"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/stefan/OneDrive/Embedded Systems/Übung3/cmake-build-debug
