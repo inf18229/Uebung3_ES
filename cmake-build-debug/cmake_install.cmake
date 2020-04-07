@@ -1,4 +1,4 @@
-# Install script for directory: /home/stefan/OneDrive/Embedded Systems/Übung3
+# Install script for directory: /home/stefan/OneDrive/Embedded Systems/Übung3 Test2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/stefan/OneDrive/Embedded Systems/Übung3/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/stefan/OneDrive/Embedded Systems/Übung3 Test2/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

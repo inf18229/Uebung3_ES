@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Uebung3.dir/src/PreAllocString.cpp.o"
+  "CMakeFiles/Uebung3.dir/src/Printf.cpp.o"
   "CMakeFiles/Uebung3.dir/src/main.cpp.o"
   "Uebung3"
   "Uebung3.pdb"

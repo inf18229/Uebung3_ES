@@ -2,21 +2,24 @@
 // Created by stefan on 05.04.20.
 //
 #include <iostream>
-#include "../include/PreAllocString.h"
+#include "PreAllocString.h"
+//#include "PreAllocString.cpp" //TODO:Wie lagert man die Template Implementierungen korrekt aus?
 int main()
 {
-    const char*versuch="Hallo Welt";
-    const char*name= "Test";
-    PreAllocString *test_string=CREATE(const_cast<char*>(name),12);
-    *test_string='F';
-    test_string->AddFormat("%d Hallo guten Tag",13);
-    std::cout<<**test_string<<std::endl;
-    PreAllocString test(const_cast<char*>(name),30);
-    test='T';
-    test=versuch;
+    std::cout<<"Manuelle Instanziierung"<<std::endl;
+    PreAllocString<20>test;
+    test="GutenTag";
+    test.AddFormat("%d %s",24,"Hallo Welt");
     std::cout<<test.GetLength()<<std::endl;
-    std::cout<<*test<<std::endl;
-    test.AddFormat("%s\n%d","Hallo Welt",123456);
-    test.AddWhiteSpace();
-    test+='E';
+    std::cout<<test.SizeOf()<<std::endl;
+
+
+    std::cout<<"==================="<<std::endl;
+
+    //Test of Makro
+    std::cout<<"Makro Test"<<std::endl;
+    CREATE(test1234,30)
+    test1234.AddFormat("%s %d","Test123jsdfj\n",24);
+    std::cout<<test1234.SizeOf()<<std::endl;
+
 }
